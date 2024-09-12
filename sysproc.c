@@ -90,7 +90,9 @@ sys_uptime(void)
   return xticks;
 }
 
-int sys_shutdown(void) {
-  exit();
-  return; //not reached
+int
+sys_shutdown(void) 
+{
+  outw(0xB004, 0x0|0x2000);
+  outw(0x604, 0x0|0x2000);
  }
