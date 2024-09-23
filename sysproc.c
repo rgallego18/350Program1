@@ -96,3 +96,14 @@ sys_shutdown(void)
   outw(0xB004, 0x0|0x2000);
   outw(0x604, 0x0|0x2000);
  }
+
+int
+sys_exit2(void)
+{
+  int status_argument = 0;
+  argint(0, &status_argument);
+  cprintf("Exit with status argument: %d\n", status_argument);
+  exit();
+  return 0;  // not reached
+}
+
