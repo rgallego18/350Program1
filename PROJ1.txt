@@ -3,7 +3,7 @@ Group members: Ryan Gallego, Priya Debnath, Ethan Bown, Shiva Ramaia
 Status of implementation: completed. Extra credit was giving error but may/may not be working as of writing this
 
 Ryan:
-Did shutdown, shutdown2, and Question 3
+Did shutdown, shutdown2, uptime2, and Question 3
 
 
 Priya:
@@ -11,7 +11,7 @@ Did exit2, as well as Question 4
 
 
 Ethan:
-Did mkdir2 and uptime2
+Did mkdir2 
 
 
 Shiva:
