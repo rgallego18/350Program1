@@ -311,6 +311,17 @@ wait(void)
   }
 }
 
+int
+sys_getppid(void)
+{
+  struct proc *curproc = myproc(); 
+  if (curproc->parent) {
+    return curproc->parent->pid; 
+  } else {
+    return -1; 
+  }
+}
+
 //PAGEBREAK: 42
 // Per-CPU process scheduler.
 // Each CPU calls scheduler() after setting itself up.

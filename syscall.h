@@ -25,3 +25,4 @@
 #define SYS_exit2  24
 #define SYS_uptime2  25
 #define SYS_mkdir2  26
+#define SYS_getppid  27
